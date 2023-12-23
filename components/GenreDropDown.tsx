@@ -20,7 +20,7 @@ async function GenreDropDown() {
     };
     const response = await fetch(url,options)
     const data = (await response.json()) as  Genres
-    console.log(data.genres)
+  
 
   return (
    <DropdownMenu>
@@ -34,7 +34,7 @@ async function GenreDropDown() {
 
             {data.genres.map((genre)=>(
                     <DropdownMenuItem key={genre.id}>
-                        <Link href={`/genre/${genre.id}?/genre=${genre.name}`}>
+                        <Link href={`/genre/${genre.id}?genre=${genre.name}`}>
                             {genre.name}
                         </Link>
 

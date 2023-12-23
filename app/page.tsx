@@ -10,9 +10,9 @@ export default async function Home() {
   return (
     <main className="">
     
-    <CarouselBannerWrapper/>
+    <CarouselBannerWrapper id={''} keywords={''}/>
 
-    <div className="flex flex-col space-y-2 xl:mt-48">
+    <div className="flex flex-col">
       <MovieCarousel movies={upcomingMovies} title='Upcoming'/>
       <MovieCarousel movies={topratedMovies} title='Top Rated'/>
       <MovieCarousel movies={popularMovies} title='Popular'/>
