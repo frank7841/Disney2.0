@@ -6,7 +6,7 @@ import useEmblaCarousel from 'embla-carousel-react'
 import Image from 'next/image';
 
 Autoplay.globalOptions = {delay:8000};
-function carouselBanner({movies}: {movies:Movie[]}) {
+function CarouselBanner({movies}: {movies:Movie[]}) {
   
     const [emblaeRef] = useEmblaCarousel({loop:true, duration:100}, [Autoplay()]);
 
@@ -33,4 +33,4 @@ function carouselBanner({movies}: {movies:Movie[]}) {
   )
 }
 
-export default carouselBanner
+export default CarouselBanner
